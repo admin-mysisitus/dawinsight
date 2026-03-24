@@ -1,0 +1,41 @@
+# DWIAGUS Ebook Rental - Deployment ID
+
+Keep this file safe. Replace with your actual deployment ID after deploying GAS Web App.
+
+## Your Google Apps Script Deployment URL
+
+```
+https://script.google.com/macros/d/YOUR_DEPLOYMENT_ID_HERE/usercodeapp
+```
+
+### How to Get Your Deployment ID
+
+1. Create Google Apps Script project
+2. Copy Code.gs into editor
+3. Click "Deploy" → "New deployment"
+4. Select type: "Web app"
+5. Execute as: Your account
+6. Who has access: "Anyone"
+7. Click "Deploy"
+8. Copy the URL given
+
+### Where to Use
+
+Update in file: `ebook/spiritualitas-sosial-transformasi.html`
+
+```javascript
+const GAS_DEPLOYMENT_URL = "https://script.google.com/macros/d/YOUR_ID_HERE/usercodeapp";
+```
+
+---
+
+## Document Version History
+
+| Date | Change |
+|------|--------|
+| 2026-03-24 | Initial template created |
+| - | Deployment URL added |
+
+---
+
+**Keep this private! Treat like an API key.**

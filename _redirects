@@ -1,0 +1,7 @@
+/* Cloudflare Pages - URL Rewrite Rules */
+
+/* Clean URLs - optional if you want to serve .html files without extension */
+/* This is for advanced configuration - usually not needed for static sites */
+
+/* Basic redirects examples (uncomment if needed) */
+/* /old-article.html https://dawinsight.com/artikel/sosial/new-article.html 301 */

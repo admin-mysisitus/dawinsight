@@ -1,0 +1,32 @@
+# robots.txt for https://dawinsight.com/
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /assets/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location for search engines
+Sitemap: https://dawinsight.com/sitemap.xml
+
+# Specific rules for search engine bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
