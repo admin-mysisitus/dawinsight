@@ -49,14 +49,14 @@ Website static personal branding telah berhasil dibangun dengan semua fitur yang
 - ✅ Static file structure
 - ✅ Cloudflare Pages compatible
 - ✅ .htaccess configuration (Apache)
-- ✅ Markdown to HTML converter utility
+- ✅ Ebook rental system dengan Google Apps Script
 
-### 6. **Developer Tools**
-- ✅ manage.bat (Windows batch script)
-- ✅ manage.sh (Linux/Mac bash script)
+### 6. **Documentation**
 - ✅ Comprehensive README.md
 - ✅ DEPLOYMENT.md dengan multiple platform guides
-- ✅ Well-commented CSS
+- ✅ QUICK_START.md for quick reference
+- ✅ EBOOK_RENTAL_GUIDE.md untuk sistem rental
+- ✅ Well-commented CSS & JavaScript
 
 ---
 
@@ -85,17 +85,23 @@ DWIAGUS/
 │   ├── css/
 │   │   └── style.css                       # Main stylesheet (8KB, minimalist)
 │   ├── js/
-│   │   └── markdown.js                     # Markdown converter utility
+│   │   └── ebook-access.js                 # Ebook rental system
 │   └── img/                                # (Add images here)
 │
-├── content/                                # (Optional: markdown sources)
+├── backend/                                # Google Apps Script backend
+│   └── Code.gs                             # GAS implementation
+│
+├── docs/                                   # Documentation files
+│   ├── EBOOK_RENTAL_GUIDE.md
+│   ├── GOOGLE_SHEETS_SETUP.md
+│   ├── IMPLEMENTATION_SUMMARY.md
+│   ├── QUICK_SETUP.md
+│   └── SAMPLE_DATA.md
 │
 ├── .htaccess                               # Apache server config + caching
 ├── _redirects                              # Cloudflare Pages redirects
 ├── robots.txt                              # SEO robots directives
 ├── sitemap.xml                             # XML sitemap (8 entries)
-├── manage.bat                              # Windows management script
-├── manage.sh                               # Mac/Linux management script
 ├── README.md                               # Main documentation
 ├── DEPLOYMENT.md                           # Deployment guides (5 platforms)
 └── QUICK_START.md                          # This file
@@ -109,16 +115,11 @@ DWIAGUS/
 
 **Windows:**
 ```bash
-manage.bat start_server
-# atau
 python -m http.server 8000
 ```
 
 **Mac/Linux:**
 ```bash
-./manage.sh
-# pilih option 5: Start Local Server
-# atau
 python3 -m http.server 8000
 ```
 
@@ -233,36 +234,18 @@ Sebelum publish, pastikan:
 
 ---
 
-## 🛠️ Available Utilities
+## � Key Project Files
 
-### Windows (manage.bat)
-```bash
-manage.bat              # Show menu
-manage.bat start_server # Start local server
-manage.bat view_stats   # Show statistics
-manage.bat list_articles # List articles
-manage.bat list_ebooks  # List e-books
-```
-
-### Mac/Linux (manage.sh)
-```bash
-./manage.sh             # Show menu
-chmod +x manage.sh      # Make executable first
-```
-
----
-
-## 📋 File Descriptions
-
-| File | Size | Purpose |
-|------|------|---------|
-| style.css | 8 KB | Main stylesheet - minimalist, responsive |
-| markdown.js | 2 KB | Markdown to HTML converter utility |
-| robots.txt | 1 KB | SEO - search engine directives |
-| sitemap.xml | 4 KB | SEO - XML sitemap |
-| .htaccess | 3 KB | Apache caching & security rules |
-| README.md | 10 KB | Full documentation |
-| DEPLOYMENT.md | 12 KB | Deployment guides for 5 platforms |
+| File | Purpose |
+|------|---------|
+| style.css | Main stylesheet - minimalist, responsive design |
+| ebook-access.js | Ebook rental system frontend |
+| Code.gs | Google Apps Script backend |
+| robots.txt | SEO - search engine directives |
+| sitemap.xml | SEO - XML sitemap |
+| .htaccess | Apache caching & security rules |
+| README.md | Full documentation |
+| DEPLOYMENT.md | Deployment guides for 5 platforms |
 
 ---
 

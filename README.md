@@ -37,18 +37,20 @@ Dibangun dengan HTML, CSS, dan JavaScript murni tanpa framework.
 │   ├── css/
 │   │   └── style.css                   # Main stylesheet (minimalist)
 │   ├── js/
-│   │   └── markdown.js                 # Markdown to HTML converter
+│   │   └── ebook-access.js             # Ebook rental system
 │   └── img/                            # Images (when added)
 │
-├── content/                            # Optional: markdown sources
-│   └── articles/
+├── backend/                            # Google Apps Script backend
+│   ├── Code.gs
+│   └── DEPLOYMENT_ID.txt
+│
+├── docs/                               # Documentation
 │
 ├── sitemap.xml                         # XML sitemap for SEO
 ├── robots.txt                          # Robots directives
 ├── _redirects                          # Cloudflare Pages redirects
 ├── .htaccess                           # Apache server config (if needed)
-├── README.md                           # This file
-└── contoh-artikel.md                   # Original markdown article
+└── README.md                           # This file
 ```
 
 ## Panduan Konten
