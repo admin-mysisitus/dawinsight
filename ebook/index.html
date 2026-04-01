@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- ========== WEBSITE DEVELOPER BY: @LUKMAN_LOOKER | OWNER sisitus.com ========== -->
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>E-Book – Dwi Sunyi</title>
+  <!-- App & Theme Settings -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="dawinsight.com" />
+  <meta name="theme-color" content="#1f2937" />
+  <!-- SEO -->
+  <meta name="description" content="Koleksi E-book dari dawinsight.com tentang isu-isu relevan." />
+  <meta name="keywords" content="ebook, buku digital, pdf" />
+  <link rel="canonical" href="https://dawinsight.com/ebook/" />
+  <!-- Open Graph -->
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="E-Book – Dwi Sunyi" />
+  <meta property="og:description" content="Koleksi e-book dan panduan digital." />
+  <meta property="og:url" content="https://dawinsight.com/ebook/" />
+  <meta property="og:image" content="https://dawinsight.com/assets/img/banner-ebook.webp" />
+  <meta property="og:image:alt" content="E-Book dawinsight.com" />
+  <meta property="og:site_name" content="Dwi Sunyi" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="E-Book – dawinsight.com" />
+  <meta name="twitter:description" content="Koleksi e-book dan panduan digital." />
+  <meta name="twitter:image" content="https://dawinsight.com/assets/img/banner-ebook.webp" />
+  <!-- Favicons & Touch Icons -->
+  <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  <!-- CSS -->
+  <link rel="preload" href="/assets/css/main.css?v=1.0" as="style" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=1.0" />
+  <link rel="stylesheet" href="/assets/css/pages/ebook.css?v=1.0" />
+  <!-- Speed Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- JS Libraries -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        "@type": "Organization",
+        "@id": "https://dawinsight.com/#organization",
+        "name": "Dwi Sunyi",
+        "legalName": "Dwi Agus Widodo, M.Pd.",
+        "url": "https://dawinsight.com/",
+        "logo": "https://dawinsight.com/assets/img/logo/logo.webp",
+        "email": "dwiagus976@gmail.com",
+        "sameAs": [
+          "https://www.instagram.com/dwisunyi",
+          "https://wa.me/6287818888003"
+        ]
+      }, {
+        "@type": "Person",
+        "@id": "https://dawinsight.com/#author",
+        "name": "Dwi Agus Widodo, M.Pd.",
+        "alternateName": "Dwi Sunyi",
+        "jobTitle": "Penulis dan Pemikir",
+        "url": "https://dawinsight.com/",
+        "image": "https://dawinsight.com/assets/img/logo/logo.webp",
+        "email": "dwiagus976@gmail.com"
+      }, {
+        "@type": "CollectionPage",
+        "@id": "https://dawinsight.com/ebook/",
+        "name": "E-Book – dawinsight.com",
+        "description": "Koleksi e-book gratis tentang agama, sosial, pemikiran, dan isu-isu kontemporer.",
+        "url": "https://dawinsight.com/ebook/",
+        "creator": {
+          "@id": "https://dawinsight.com/#author"
+        },
+        "publisher": {
+          "@id": "https://dawinsight.com/#organization"
+        }
+      }]
+    }
+  </script>
+</head>
+
+<body>
+  <header aria-label="Navigasi Utama">
+    <div class="container nav-container">
+      <a href="/" class="logo" aria-label="Kembali ke beranda">
+        <div class="logo-img">
+          <img src="https://dawinsight.com/assets/img/logo/logo.webp" alt="Logo dawinsight.com" width="512" height="512">
+        </div>
+        <div class="logo-text">
+          <span>dawinsight.com</span>
+          <p>Insight tajam untuk zaman yang bising</p>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Navigasi Desktop"></nav>
+      <button class="nav-mobile-btn" id="nav-mobile-btn" aria-label="Buka/Tutup Menu Mobile" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-mobile" id="nav-mobile" aria-label="Navigasi Mobile" aria-hidden="true"></nav>
+    </div>
+  </header>
+
+  <main id="ebook-container">
+    <!-- Loading state -->
+    <div id="ebook-loading" class="ebook-loading">
+      <div class="spinner"></div>
+      <p>Memuat e-book...</p>
+    </div>
+
+    <!-- Error state -->
+    <div id="ebook-error" class="ebook-error" style="display: none;">
+      <i class="fas fa-exclamation-circle"></i>
+      <h2>E-Book Tidak Ditemukan</h2>
+      <p id="error-message">Maaf, e-book yang Anda cari tidak tersedia.</p>
+      <a href="/" class="btn btn-primary">Kembali ke Beranda</a>
+    </div>
+
+    <!-- Ebook content template (will be populated by JS) -->
+    <div id="ebook-content" style="display: none;">
+      <!-- ============== HERO SECTION ============== -->
+      <section class="ebook-hero" aria-labelledby="ebook-title">
+        <div class="hero-content">
+          <h1 id="ebook-title"></h1>
+          <p id="ebook-subtitle" class="hero-subtitle"></p>
+        </div>
+      </section>
+
+      <!-- ============== EBOOK DETAIL SECTION ============== -->
+      <section class="ebook-detail" aria-labelledby="tentang-ebook">
+        <div class="container">
+          <div class="ebook-layout">
+            <!-- Sidebar: Cover & Info -->
+            <aside class="ebook-sidebar">
+              <div class="ebook-cover-detail">
+                <img id="ebook-cover" src="" alt="Cover E-Book" loading="lazy">
+              </div>
+              
+              <div class="ebook-metadata">
+                <h3>Informasi E-Book</h3>
+                <dl>
+                  <dt>Penulis</dt>
+                  <dd id="ebook-author"></dd>
+                  
+                  <dt>Tahun Terbit</dt>
+                  <dd id="ebook-year"></dd>
+                  
+                  <dt>Format</dt>
+                  <dd id="ebook-format"></dd>
+                  
+                  <dt>Jumlah Halaman</dt>
+                  <dd id="ebook-pages"></dd>
+                  
+                  <dt>Bahasa</dt>
+                  <dd id="ebook-language"></dd>
+                </dl>
+              </div>
+
+              <div class="ebook-price-card">
+                <div class="price-section">
+                  <p class="price-label">Sewa E-Book</p>
+                  <p class="price-amount">Rp <span id="ebook-price">0</span></p>
+                  <p class="price-duration" id="ebook-rent-days">Akses 30 hari</p>
+                </div>
+                <button class="btn btn-primary btn-lg btn-rent" id="btn-rent" aria-label="Sewa E-Book">
+                  <i class="fas fa-shopping-cart"></i> Sewa Sekarang
+                </button>
+                <p class="ebook-perks">
+                  <i class="fas fa-check-circle"></i> Akses offline
+                  <i class="fas fa-check-circle"></i> Download PDF
+                  <i class="fas fa-check-circle"></i> Print-friendly
+                </p>
+              </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="ebook-content-main">
+              <!-- About Section -->
+              <section class="content-section" id="tentang-ebook">
+                <h2>Tentang E-Book Ini</h2>
+                <div id="ebook-description"></div>
+              </section>
+
+              <!-- Target Reader Section -->
+              <section class="content-section">
+                <h2>Siapa yang Seharusnya Membaca?</h2>
+                <p>E-Book ini dirancang untuk:</p>
+                <ul class="target-list" id="ebook-target-audience"></ul>
+              </section>
+
+              <!-- Preview Section -->
+              <section class="content-section">
+                <h2>Pratinjau</h2>
+                <div class="preview-info">
+                  <p id="preview-text"><strong>Tersedia 5 halaman pertama untuk dibaca secara gratis</strong></p>
+                </div>
+                <div class="preview-content">
+                  <div id="preview-viewer" class="preview-viewer">
+                    <!-- PDF preview akan di-load di sini via iframe atau canvas -->
+                  </div>
+                </div>
+                <p class="preview-notice" id="preview-notice">Untuk membaca halaman selanjutnya, Anda perlu menyewa e-book ini.</p>
+              </section>
+
+              <!-- Synopsis Section -->
+              <section class="content-section">
+                <h2>Sinopsis</h2>
+                <blockquote class="ebook-synopsis" id="ebook-synopsis"></blockquote>
+              </section>
+
+              <!-- Key Highlights Section -->
+              <section class="content-section">
+                <h2>Poin-Poin Utama</h2>
+                <div class="highlights-grid" id="highlights-grid"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== RELATED EBOOKS SECTION ============== -->
+      <section class="related-ebooks" aria-labelledby="related-heading">
+        <div class="container">
+          <h2 id="related-heading">E-Book Terkait</h2>
+          <div class="related-grid" id="related-ebooks-grid"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer aria-label="Informasi Footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col" aria-labelledby="footer-col1-heading">
+          <a href="/" class="logo footer-logo" aria-label="Kembali ke beranda">
+            <div class="logo-img">
+              <img src="https://dawinsight.com/assets/img/logo/logo.webp" alt="Logo dawinsight.com" width="512" height="512" loading="lazy">
+            </div>
+            <div class="logo-text">
+              <span>dawinsight.com</span>
+              <p>Insight tajam untuk zaman yang bising</p>
+            </div>
+          </a>
+          <h2 class="sr-only" id="footer-col1-heading">Tentang dawinsight.com</h2>
+          <p class="footer-deskripsi">Penulis yang menulis bukan untuk sekadar berbicara, tetapi untuk memahami. Insight dari sunyi untuk kesadaran bersama.</p>
+          <div class="footer-sosmed" aria-label="Tautan Media Sosial" id="footer-sosmed-container"></div>
+          <div id="datetimeContainer" class="footer-datetime" aria-label="Tanggal & Waktu">
+            <div id="datetime"></div>
+            <div id="separator"></div>
+            <div id="info"></div>
+          </div>
+        </div>
+
+        <div class="footer-col" aria-labelledby="footer-col2-heading" data-no-cf>
+          <h3 class="footer-judul" id="footer-col2-heading">Kontak Kami</h3>
+          <ul class="footer-kontak" id="footer-kontak-container"></ul>
+        </div>
+
+        <div class="footer-col" aria-labelledby="footer-col3-heading">
+          <div class="link-services-wrapper">
+            <div class="link-section">
+              <h3 class="footer-judul" id="footer-col3-heading">Menu</h3>
+              <ul class="footer-link" id="footer-quick-links"></ul>
+            </div>
+            <div class="services-section">
+              <h3 class="footer-judul">Informasi</h3>
+              <ul class="footer-link" id="footer-main-services"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col" aria-labelledby="footer-col4-heading">
+          <h3 class="footer-judul" id="footer-col4-heading">Lokasi Kami</h3>
+          <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.7434945639886!2d106.65194!3d-6.2297388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e0e0e0e0e1%3A0x0!2sDwi%20Sunyi!5e0!3m2!1sid!2sid!4v1769273243610!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi dawinsight.com"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Preloader Component -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="logo-wrap">
+        <div class="logo-spin">
+          <img src="https://dawinsight.com/assets/img/logo/logo.webp" alt="Logo" class="loader-icon">
+        </div>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Dwi</span>
+        <span class="brand-dot">Sunyi</span>
+      </div>
+    </div>
+  </div>
+  <!-- Support Button -->
+  <div class="support-btn-wrapper"></div>
+  <!-- External JS -->
+  <script src="/assets/js/main.js" type="module"></script>
+</body>
+
+</html>
+

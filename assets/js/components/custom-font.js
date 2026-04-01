@@ -1,0 +1,58 @@
+// Aplikasikan Style Khusus untuk Teks "dawinsight.com"
+const applyCustomFont = (root = document.body) => {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    if (/dawinsight.com/i.test(node.nodeValue)) {
+      let el = node.parentNode;
+      let skip = false;
+      while (el && el !== document.body) {
+        if (el.hasAttribute && el.hasAttribute('data-no-cf')) {
+          skip = true;
+          break;
+        }
+        el = el.parentNode;
+      }
+      if (!skip) {
+        nodes.push(node);
+      }
+    }
+  }
+  for (const node of nodes) {
+    if (node.parentNode.classList?.contains('dawinsight-com-font')) continue;
+    const frag = document.createDocumentFragment();
+    node.nodeValue.split(/(dawinsight.com)/i).forEach(part => {
+      if (/dawinsight.com/i.test(part)) {
+        const span = document.createElement('span');
+        span.className = 'dawinsight-com-font';
+        span.textContent = part;
+        frag.appendChild(span);
+      } else {
+        frag.appendChild(document.createTextNode(part));
+      }
+    });
+    node.parentNode.replaceChild(frag, node);
+  }
+};
+
+// Jalankan pertama kali untuk seluruh halaman
+applyCustomFont(document.body);
+
+// Pasang observer untuk elemen baru yang dimuat secara dinamis
+const textObserver = new MutationObserver(mutations => {
+  for (const mutation of mutations) {
+    for (const node of mutation.addedNodes) {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        applyCustomFont(node);
+      }
+    }
+  }
+});
+
+// Konfigurasi observer untuk mendeteksi perubahan DOM
+textObserver.observe(document.body, {
+  childList: true,
+  subtree: true
+});
+

@@ -1,0 +1,102 @@
+// =========================
+// DATA NAVIGASI HEADER
+// =========================
+export const menuData = [
+  { href: "/", text: "Home", icon: "fas fa-home" },
+
+  {
+    text: "Tentang",
+    href: "/tentang/",
+    icon: "fas fa-user",
+    dropdown: [
+      { href: "/tentang/", text: "Tentang Saya", icon: "fas fa-user-circle", isParent: true },
+      { href: "/tentang/biografi/", text: "Biografi & Pendidikan", icon: "fas fa-book" },
+      { href: "/tentang/organisasi/", text: "Organisasi & Pengalaman", icon: "fas fa-briefcase" }
+    ]
+  },
+
+  {
+    text: "Artikel",
+    href: "/artikel/",
+    icon: "fas fa-newspaper",
+    dropdown: [
+      { href: "/artikel/", text: "Semua Artikel", icon: "fas fa-pen-fancy", isParent: true },
+      { href: "/artikel/islami/", text: "Islami", icon: "fas fa-mosque" },
+      { href: "/artikel/sosial/", text: "Sosial", icon: "fas fa-people-arrows" },
+      { href: "/artikel/pemikiran/", text: "Pemikiran", icon: "fas fa-lightbulb" }
+    ]
+  },
+
+  {
+    text: "Portofolio",
+    href: "/portofolio/",
+    icon: "fas fa-briefcase",
+    dropdown: [
+      { href: "/portofolio/", text: "Portofolio", icon: "fas fa-th", isParent: true },
+      { href: "/portofolio/karya-tulis/", text: "Karya Tulis", icon: "fas fa-pen" },
+      { href: "/portofolio/akademik/", text: "Akademik & Workshop", icon: "fas fa-chalkboard-user" },
+      { href: "/portofolio/organisasi/", text: "Organisasi", icon: "fas fa-sitemap" },
+      { href: "/portofolio/sertifikasi/", text: "Sertifikasi", icon: "fas fa-certificate" }
+    ]
+  },
+
+  { href: "/ebook/", text: "E-Book", icon: "fas fa-book-open" },
+
+  { href: "/kontak/", text: "Kontak", icon: "fas fa-envelope" }
+];
+
+
+// =========================
+// DATA QUICK LINKS FOOTER
+// =========================
+export const quickLinksData = [
+  { href: "/", text: "Home" },
+  { href: "/tentang/", text: "Tentang" },
+  { href: "/artikel/", text: "Artikel" },
+  { href: "/portofolio/", text: "Portofolio" }
+];
+
+
+// =========================
+// DATA LAYANAN UTAMA FOOTER (untuk kompatibilitas)
+// =========================
+export const mainServicesData = [
+  { href: "/artikel/", text: "Artikel" },
+  { href: "/ebook/", text: "E-Book" },
+  { href: "/portofolio/", text: "Portofolio" }
+];
+
+
+// =========================
+// DATA SOSIAL MEDIA FOOTER
+// =========================
+export const footerSocialData = [
+  { href: "https://www.instagram.com/dwisunyi", ariaLabel: "Instagram", icon: "fab fa-instagram" },
+  { href: "https://wa.me/6287818888003", ariaLabel: "WhatsApp", icon: "fab fa-whatsapp" },
+  { href: "mailto:dwiagus976@gmail.com", ariaLabel: "Email", icon: "fas fa-envelope" },
+  { href: "https://www.linkedin.com/in/dwiagus", ariaLabel: "LinkedIn", icon: "fab fa-linkedin-in" }
+];
+
+
+// =========================
+// DATA KONTAK FOOTER
+// =========================
+export const footerContactData = [
+  {
+    icon: "fas fa-map-marker-alt",
+    text: "Surabaya, Indonesia"
+  },
+  {
+    icon: "fas fa-phone-alt",
+    text: "<a href=\"tel:+62-878-1888-8003\" class=\"footer-kontak-link\">+62 878-1888-8003</a>"
+  },
+  {
+    icon: "fas fa-envelope",
+    text: "<a href=\"mailto:dwiagus976@gmail.com\" class=\"footer-kontak-link\">dwiagus976@gmail.com</a>"
+  },
+  {
+    icon: "fas fa-clock",
+    text: "Senin - Jumat: 09.00 - 17.00 WIB"
+  }
+];
+

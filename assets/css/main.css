@@ -1,0 +1,24 @@
+/* ========== IMPORT FILE CSS ========== */
+/* Base */
+@import url('base/variables.css');
+@import url('base/reset.css');
+@import url('base/components-standard.css');
+@import url('base/shared-animations.css');
+@import url('base/shared-sections.css');
+@import url('base/shared-cards.css');
+
+/* Layout */
+@import url('layout/header.css');
+@import url('layout/footer.css');
+@import url('layout/responsive.css');
+
+/* Components */
+@import url('components/support-btn.css');
+@import url('components/preloader.css');
+@import url('components/custom-font.css');
+@import url('components/button.css');
+@import url('components/hero.css');
+
+/* Pages */
+@import url('pages/home.css');
+@import url('pages/tentang.css');

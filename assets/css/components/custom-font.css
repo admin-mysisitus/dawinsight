@@ -1,0 +1,82 @@
+/* ===============================
+   COMPONENT - DAWINSIGHT.COM FONT
+=============================== */
+.dawinsight-com-font {
+  font-family: var(--font-utama);
+  font-weight: 700;
+  text-transform: UPPERCASE;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(90deg,
+      var(--primary-blue) 0%,
+      var(--primary-blue) 35%,
+      rgba(255, 255, 255, 0.9) 50%,
+      var(--primary-blue) 65%,
+      var(--primary-blue) 100%);
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow-sweep 14s linear infinite;
+  -webkit-text-stroke: 0.6px rgba(37, 99, 235, 0.6);
+  text-shadow:
+    0 1px 2px rgba(37, 99, 235, 0.15);
+}
+
+@keyframes glow-sweep {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 150% 0%;
+  }
+
+  100% {
+    background-position: 300% 0%;
+  }
+}
+
+
+
+/* ===============================
+   WATERMARK / CREDIT LOGO
+   =============================== */
+
+.logo.wm-sc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  word-spacing: 0;
+  letter-spacing: -0.25px;
+  font-variant-ligatures: none;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #0f172a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  opacity: 0.32;
+  transition: opacity 0.3s ease;
+}
+
+.logo.wm-sc::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--favicon-url) no-repeat center / contain;
+  opacity: 0.85;
+}
+
+.logo.wm-sc span {
+  color: var(--success-green);
+  transform: none !important;
+}
+
+.logo.wm-sc:hover {
+  opacity: 0.6;
+}

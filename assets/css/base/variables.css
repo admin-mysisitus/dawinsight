@@ -1,0 +1,172 @@
+:root {
+  /* ========== COLOR SYSTEM - DARK ISLAMIC THEME ========== */
+  
+  /* PRIMARY COLORS - Dark Navy Background */
+  --color-bg-darkest: #0a0e27;   /* Darkest background - footer, deep sections */
+  --color-bg-dark: #0f172a;      /* Main dark background - pages */
+  --color-bg-darker: #1e293b;    /* Slightly lighter dark - cards, containers */
+  
+  /* ACCENT COLORS */
+  --color-accent-cyan: #06b6d4;   /* Primary accent - buttons, highlights */
+  --color-accent-cyan-light: rgba(6, 182, 212, 0.15); /* Cyan with 15% opacity - badges, light backgrounds */
+  --color-accent-green: #10b981;  /* Success/secondary accent */
+  --color-accent-green-light: #16db93; /* Lighter green for gradients */
+  
+  /* TEXT COLORS - High Contrast on Dark */
+  --color-text-white: #ffffff;           /* Primary text - pure white */
+  --color-text-light: rgba(255, 255, 255, 0.95);  /* Slightly lighter */
+  --color-text-secondary: rgba(255, 255, 255, 0.8); /* Secondary text */
+  --color-text-muted: rgba(255, 255, 255, 0.6);    /* Muted text */
+  --color-text-faint: rgba(255, 255, 255, 0.4);    /* Very light muted */
+  
+  /* GRADIENT ACCENTS */
+  --color-gradient-cyan-green: linear-gradient(135deg, #06b6d4, #10b981);
+  --color-gradient-cyan-light: linear-gradient(135deg, #06b6d4, #16db93);
+  --color-gradient-section-light: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(22, 219, 147, 0.05));
+  --color-gradient-section-medium: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(22, 219, 147, 0.08));
+  
+  /* BORDERS & LINES */
+  --color-border-light: rgba(6, 182, 212, 0.15);      /* Light border */
+  --color-border-medium: rgba(6, 182, 212, 0.25);     /* Medium border */
+  --color-border-accent: rgba(6, 182, 212, 0.4);      /* Accent border */
+  
+  /* STATUS COLORS */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #06b6d4;
+  
+  /* ========== TYPOGRAPHY ========== */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+  
+  /* Font Sizes - Responsive */
+  --font-size-h1: clamp(2.4rem, 5vw, 3.5rem);
+  --font-size-h2: clamp(2rem, 4vw, 2.8rem);
+  --font-size-h3: clamp(1.5rem, 3vw, 2.2rem);
+  --font-size-h4: clamp(1.25rem, 2.5vw, 1.8rem);
+  --font-size-body-lg: clamp(1.05rem, 1.8vw, 1.25rem);
+  --font-size-body: clamp(1rem, 1.5vw, 1.1rem);
+  --font-size-body-sm: clamp(0.9rem, 1.2vw, 1rem);
+  --font-size-caption: clamp(0.8rem, 1vw, 0.9rem);
+  --font-size-tiny: 0.75rem;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  --line-height-loose: 2;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* ========== SPACING ========== */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 5rem;
+  
+  /* Section Padding */
+  --padding-section-sm: clamp(2rem, 4vw, 3rem) 1rem;
+  --padding-section-md: clamp(3rem, 6vw, 4.5rem) 1rem;
+  --padding-section-lg: clamp(4rem, 8vw, 6rem) 1rem;
+  --padding-section-xl: clamp(5rem, 10vw, 7rem) 1rem;
+  
+  /* ========== BORDER RADIUS ========== */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-full: 50%;
+  
+  /* ========== SHADOWS ========== */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+  --shadow-glow-cyan: 0 0 20px rgba(6, 182, 212, 0.15);
+  --shadow-glow-green: 0 0 20px rgba(16, 185, 129, 0.1);
+  
+  /* ========== TRANSITIONS ========== */
+  --transition-fast: all 0.15s ease-in-out;
+  --transition-normal: all 0.25s ease-in-out;
+  --transition-slow: all 0.35s ease-in-out;
+  --transition-very-slow: all 0.5s ease-in-out;
+  
+  /* ========== Z-INDEXES ========== */
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-fixed: 900;
+  --z-modal: 1000;
+  --z-tooltip: 1001;
+  
+  /* ========== FORM STYLING ========== */
+  --color-input-bg: rgba(30, 41, 59, 0.8);
+  --color-input-focus: rgba(6, 182, 212, 0.1);
+  --color-text-disabled: rgba(255, 255, 255, 0.4);
+  --color-success: #10b981;
+  --color-gradient-section-faint: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.03));
+  
+  /* ========== BREAKPOINTS (for reference) ========== */
+  /* Mobile: 320px - 639px */
+  /* Tablet: 640px - 1023px */
+  /* Desktop: 1024px+ */
+}
+
+/* LEGACY COMPATIBILITY - Not recommended for new code */
+:root {
+  /* Old variable names - map to new system */
+  --primary-blue: #06b6d4;
+  --primary-blue-dark: #0884a3;
+  --primary-blue-light: #16db93;
+  --secondary-slate: #1e293b;
+  --accent-cyan: #06b6d4;
+  --success-green: #10b981;
+  --warning-orange: #f59e0b;
+  --error-red: #ef4444;
+  --bg-white: #0f172a;
+  --bg-light: #1e293b;
+  --bg-lighter: rgba(6, 182, 212, 0.05);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-light: rgba(255, 255, 255, 0.6);
+  --border-light: rgba(6, 182, 212, 0.15);
+  --border-medium: rgba(6, 182, 212, 0.25);
+  --dark-navy: #0f172a;
+  --brand-green: #10b981;
+  --bg-darkest: #0f172a;
+  --white: #ffffff;
+  --gray-light: rgba(255, 255, 255, 0.1);
+  --gray-medium: rgba(255, 255, 255, 0.6);
+  --bg-surface: #1e293b;
+  --font-utama: 'Inter', sans-serif;
+  --judul-besar: var(--font-size-h1);
+  --judul-sedang: var(--font-size-h2);
+  --judul-kecil: var(--font-size-h3);
+  --teks-standar: var(--font-size-body);
+  --teks-kecil: var(--font-size-body-sm);
+  --teks-terkecil: var(--font-size-caption);
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  --radius: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-besar: 20px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --shadow-lembut: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-elegan: 0 10px 30px rgba(6, 182, 212, 0.15);
+  --transisi: all 0.25s ease-in-out;
+  --transisi-cepat: all 0.15s ease-in-out;
+}
